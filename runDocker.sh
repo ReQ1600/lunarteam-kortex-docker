@@ -12,7 +12,6 @@ docker run -it \
     -e DISPLAY=$DISPLAY \
     -e XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
     -v /tmp/.X11-unix/:/tmp/.X11-unix/:rw \
-    -v ./clearpath:/root/clearpath \
     --net bridge \
     ros2-lunarteam-kortex
     bash
