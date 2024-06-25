@@ -1,4 +1,7 @@
 # lunarteam-kortex-docker
+
+Will probably be changed a lot.
+
 ## Prerequisites
 - Installed docker
 ## Running
@@ -22,10 +25,12 @@ Alternatively you can start the container in interactive mode and then switch to
 sudo docker start -i lunarteam-kortex
 sudo -i # the password is 1234
 ~~~
-If you dont want to switch between users for workspace building you can either not use vscode or use this command everytime you want to open it:
+If you dont want to switch between users for workspace building you can either not use vscode inside the container or use this command everytime you want to open it:
 ~~~
 sudo code --no-sandbox --user-data-dir="~/.vscode-root"
 ~~~
+But I suggest opening vsc on main system and starting docker from there.
+
 ## What's inside
 The image is created from osrf/ros2-humble-desktop image and downloads:
 - apt utils
@@ -40,3 +45,5 @@ The image is created from osrf/ros2-humble-desktop image and downloads:
 - [kinova_gen3_control_interfaces](https://github.com/ReQ1600/kinova_gen3_control_interfaces)
 - [ros2_kortex](https://github.com/Kinovarobotics/ros2_kortex)
 - [moveit2](https://github.com/moveit/moveit2)
+- [gazebo](https://github.com/gazebosim)
+- [vscode](https://code.visualstudio.com/)
